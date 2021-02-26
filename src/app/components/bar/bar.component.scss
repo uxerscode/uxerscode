@@ -1,0 +1,21 @@
+@import "../../../styles";
+@import "./bar.component.scss-theme.scss";
+
+@include mat-core();
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.title {
+    padding-left: .5em;
+    height: 24px;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.mdi {
+    font-size: 24px;
+}

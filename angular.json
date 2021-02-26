@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "uxerscode"
+  "defaultProject": "uxerscode",
+  "cli": {
+    "analytics": false
+  }
 }
