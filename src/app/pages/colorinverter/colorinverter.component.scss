@@ -4,35 +4,29 @@
 @include mat-core();
 
 .colorinverter {
-  // retrieve variables from theme 
-  // (all possible variables, use only what you really need)
-  $primary: map-get($theme, primary);
-  $accent: map-get($theme, accent);
-  $warn: map-get($theme, accent);
-  $foreground: map-get($theme, foreground);
-  $background: map-get($theme, background);
-
   padding: 1em;
   padding-left: 5em;
   padding-right: 5em;
   height: 100%;
-  background: mat-color($primary);
+  background: url("../../../assets/xdbackground.png") no-repeat center center fixed;
+  background-size: cover;
+
   color: $light-text;
 
   .message {
-      margin-top: 2em;
-      font-size: larger;
+    margin-top: 2em;
+    font-size: larger;
   }
 
   button {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   a:link {
-      color: $light-text;
+    color: $light-text;
   }
 
   a:visited {
-      color: $light-text;
+    color: $light-text;
   }
 }
