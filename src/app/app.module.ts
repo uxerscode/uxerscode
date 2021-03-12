@@ -15,16 +15,20 @@ const materialModules = [
   MatToolbarModule,
 ];
 
-// Pages
-import { WelcomeComponent } from './pages/welcome/welcome.component';
-const pages = [
-  WelcomeComponent,
-]
 // Local Components
 import { BarComponent } from './components/bar/bar.component';
-import { ColorinverterComponent } from './pages/colorinverter/colorinverter.component';
 const components = [
   BarComponent,
+]
+
+// Pages
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { ColorinverterComponent } from './pages/colorinverter/colorinverter.component';
+import { MdiComponent } from './pages/mdi/mdi.component';
+const pages = [
+  WelcomeComponent,
+  ColorinverterComponent,
+  MdiComponent
 ]
 
 @NgModule({
@@ -32,7 +36,6 @@ const components = [
     AppComponent,
     ...components,
     ...pages,
-    ColorinverterComponent
   ],
   imports: [
     BrowserModule,
