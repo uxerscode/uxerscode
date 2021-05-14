@@ -12,4 +12,14 @@ export class BarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mail() {
+    window.location.href = "mailto:uxerscode@gmail.com";
+  }
+
+  twitter() {
+  }
+
+  github() {
+    window.location.href = "https://github.com/uxerscode";
+  }
 }
